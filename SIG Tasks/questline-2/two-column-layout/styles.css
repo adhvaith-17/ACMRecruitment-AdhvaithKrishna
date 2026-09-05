@@ -1,0 +1,35 @@
+/* Default Body Styles */
+body {
+  background-color: #f4f4f9; /* Default background color */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+}
+
+/* Flexbox Container for Two-Column Layout */
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+/* Individual Column Styles */
+.column {
+  flex: 1; /* Ensures both columns take up equal space */
+  background: #ffffff;
+  padding: 20px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+}
+
+/* Triggers when screen width is strictly below 500px */
+@media (max-width: 499px) {
+  body {
+    background-color: #ffcccb; /* Changes background color to light red */
+  }
+  
+  /* Stacks columns vertically on small screens */
+  .container {
+    flex-direction: column;
+  }
+}
